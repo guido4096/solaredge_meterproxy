@@ -16,7 +16,9 @@ from pymodbus.datastore import ModbusSlaveContext
 from pymodbus.datastore import ModbusServerContext
 from pymodbus.payload import BinaryPayloadBuilder
 
-# Protocol for WattNode register list: https://ctlsys.com/wp-content/uploads/2016/10/WNC-Modbus-Register-List-V18.xls
+# Protocol for WattNode register list: 
+#   https://ctlsys.com/wp-content/uploads/2016/10/WNC-Modbus-Register-List-V18.xls
+#   https://ctlsys.com/wp-content/uploads/2016/10/WNC-Modbus-Manual-V18c.pdf
 def t_update(ctx, stop, module, device, refresh):
 
     this_t = threading.current_thread()
